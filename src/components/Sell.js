@@ -1,11 +1,11 @@
-import firebase from "firebase";
+
 import { useState } from "react";
 import { storage, db } from "../fbConfig";
 
 const Sell = () => {
 
     const [image, setImage] = useState(null);
-    const [url, setUrl] = useState("");
+    //const [url, setUrl] = useState("");
     const [progress, setProgress] = useState(0);
     const [caption, setCaption] = useState("");
 
@@ -37,7 +37,7 @@ const Sell = () => {
               .child(image.name)
               .getDownloadURL()
               .then((url) => {
-                setUrl(url);
+                //setUrl(url);
     
                 // post image inside db
                 db.collection("listings").add({

@@ -1,8 +1,10 @@
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+
 import Buy from './components/Buy';
+import Header from './components/Header';
 import Home from './components/Home';
 import Sell from './components/Sell';
-import {db} from './fbConfig'
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <Router>
 
             <Switch>
-                           
+                   <Header/>        
                <Route path='/buy'>
                  
                  <Buy/>
