@@ -13,21 +13,24 @@ function App() {
         <Router>
 
             <Switch>
-                   <Header/>        
+                         
                <Route path='/buy'>
-                 
-                 <Buy/>
+                
+                  <Header/>  
+                  <Buy/> 
                   
                 </Route>
 
                 <Route path='/sell'>
                   
+                  <Header/> 
                   <Sell/>
                 
                 </Route>
                 
                 <Route path='/'>
                   
+                  <Header/> 
                   <Home/>
                   
                 </Route>    

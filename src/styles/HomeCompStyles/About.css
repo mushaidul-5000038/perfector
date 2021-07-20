@@ -1,0 +1,24 @@
+.about {
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #dfe4f5;
+}
+
+.about__container {
+  display: flex;
+  padding: 10px;
+}
+
+.about__carousel {
+  padding: 20px;
+  border-radius: 45px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
