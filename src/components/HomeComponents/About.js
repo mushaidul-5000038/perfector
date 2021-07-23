@@ -1,6 +1,6 @@
 import '../../styles/HomeCompStyles/About.css'
 import { Carousel } from 'react-responsive-carousel'
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import  "react-responsive-carousel/lib/styles/carousel.min.css";
 const About = () => {
     return (
         <div className='about'>
@@ -19,7 +19,7 @@ const About = () => {
            
 
             <div className='about__carousel'>
-            <Carousel  autoPlay={true} showArrows={true} showThumbs={false} infiniteLoop>
+            <Carousel className='carousel' autoPlay={true} showArrows={true} showThumbs={false} infiniteLoop>
                 <div>
                 <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img1" />
                 
@@ -30,10 +30,9 @@ const About = () => {
                 </div>
                 
                 <div>
-                <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" alt="img1" />
+                <img src="https://images.unsplash.com/photo-1596716587659-a922cc68513f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="img1" />
                
                 </div>
-
             </Carousel>
 
             </div>

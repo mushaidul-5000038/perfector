@@ -1,0 +1,88 @@
+.sell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c96567;
+}
+
+.sell__form {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 550px;
+  padding: 10px;
+  background-color: #644e5b;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sell__PropertyDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.sell__PropertyDetails > h1 {
+  margin-bottom: 0;
+  color: aliceblue;
+  font-weight: 400;
+}
+
+.sell__PropertyDetails > input {
+  width: 75%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.restrict_width {
+  max-width: 200px;
+}
+
+.sell__imageUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.sell__imageUpload > h3,
+progress {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.sell__imageUpload > progress {
+  margin-bottom: 10px;
+}
+
+.sell__inputsOneRow {
+  display: flex;
+}
+
+.sell__inputsOneRow > input {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-right: 5px;
+}
+
+.restrict_width {
+  max-width: 140px;
+}

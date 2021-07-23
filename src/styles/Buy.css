@@ -1,0 +1,17 @@
+.buy {
+  min-height: 100vh;
+
+  background-color: #c96567;
+  width: 100%;
+}
+
+.buy__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.buy__container > div {
+  flex: 32%;
+}

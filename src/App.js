@@ -3,6 +3,8 @@ import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Buy from './components/Buy';
 import Header from './components/Header';
 import Home from './components/Home';
+import Footer from './components/HomeComponents/Footer';
+import PropertyDetails from './components/BuyComponents/PropertyDetails';
 import Sell from './components/Sell';
 
 
@@ -17,7 +19,8 @@ function App() {
                <Route path='/buy'>
                 
                   <Header/>  
-                  <Buy/> 
+                  <Buy/>
+                  <Footer/> 
                   
                 </Route>
 
@@ -25,6 +28,15 @@ function App() {
                   
                   <Header/> 
                   <Sell/>
+                  <Footer/> 
+                
+                </Route>
+
+                <Route path='/property/:id'>
+                  
+                  <Header/> 
+                  <PropertyDetails/>
+                  <Footer/> 
                 
                 </Route>
                 
@@ -32,6 +44,7 @@ function App() {
                   
                   <Header/> 
                   <Home/>
+                  <Footer/> 
                   
                 </Route>    
                 

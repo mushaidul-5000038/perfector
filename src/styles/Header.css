@@ -12,7 +12,9 @@
   width: 45%;
   height: 100%;
   padding: 5px;
-  background-color: #dfe4f5;
+  background-color: #25274d;
+  color: #b5c1cc;
+
   display: flex;
   align-items: center;
   justify-content: space-evenly;

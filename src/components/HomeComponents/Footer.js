@@ -1,7 +1,9 @@
+import '../../styles/HomeCompStyles/Footer.css'
+
 const Footer = () => {
     return (
-        <div>
-            
+        <div className='footer'>
+            This is the footer
         </div>
     )
 }

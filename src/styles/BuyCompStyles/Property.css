@@ -1,0 +1,44 @@
+.property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  margin: 8px;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.property > img {
+  width: 100%;
+  min-width: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.property__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  padding-bottom: px;
+
+  color: aliceblue;
+  background-color: rgba(27, 25, 25, 0.411);
+
+  position: relative;
+  margin-top: -32px;
+}
+
+.property__details > h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.property__details > button {
+  margin-right: 5px;
+}

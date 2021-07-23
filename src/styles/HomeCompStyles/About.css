@@ -1,18 +1,21 @@
 .about {
   margin-top: 0;
-  position: absolute;
+  margin-bottom: 0;
   width: 100%;
-  background-color: #dfe4f5;
+  background-color: #c96567;
 }
 
 .about__container {
   display: flex;
-  padding: 10px;
+
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .about__carousel {
   padding: 20px;
-  border-radius: 45px;
+  overflow: hidden;
 }
 
 .about__text {
@@ -21,4 +24,15 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
+  color: aliceblue;
+}
+
+.carousel {
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
