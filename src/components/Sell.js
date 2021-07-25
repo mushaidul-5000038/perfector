@@ -27,52 +27,57 @@ const Sell = () => {
   };
 
   const handleUpload = () => {
-    const uploadTask = storage.ref(`images/${image.name}`).put(image);
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {
-        // progress function ...
-        const progress = Math.round(
-          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
-        );
-        setProgress(progress);
-      },
-      (error) => {
-        // Error function ...
-        console.log(error);
-      },
-      () => {
-        // complete function ...
-        storage
-          .ref("images")
-          .child(image.name)
-          .getDownloadURL()
-          .then((url) => {
-            //setUrl(url);
+    if (name && Owneraddress && phone && nid && title && propertyAddress && room && size && description && price && category && image) {
+      const uploadTask = storage.ref(`images/${image.name}`).put(image);
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          // progress function ...
+          const progress = Math.round(
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+          );
+          setProgress(progress);
+        },
+        (error) => {
+          // Error function ...
+          console.log(error);
+        },
+        () => {
+          // complete function ...
+          storage
+            .ref("images")
+            .child(image.name)
+            .getDownloadURL()
+            .then((url) => {
+              //setUrl(url);
 
-            // post image inside db
-            db.collection("listings").add({
-              name: name,
-              Owneraddress: Owneraddress,
-              phone: phone,
-              nid: nid,
-              title: title,
-              propertyAddress: propertyAddress,
-              room: room,
-              size: size,
-              price: price,
-              category: category,
-              imageUrl: url,
-              description: description,
-              //timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+              // post image inside db
+              db.collection("listings").add({
+                name: name,
+                Owneraddress: Owneraddress,
+                phone: phone,
+                nid: nid,
+                title: title,
+                propertyAddress: propertyAddress,
+                room: room,
+                size: size,
+                price: price,
+                category: category,
+                imageUrl: url,
+                description: description,
+                //timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+              });
+
+              setProgress(0);
+              setDescription("");
+              setImage(null);
             });
-
-            setProgress(0);
-            setDescription("");
-            setImage(null);
-          });
-      }
-    );
+        }
+      );
+    }
+    else {
+      alert("Please fill all the details")
+    }
   };
   return (
     <div className='sell'>

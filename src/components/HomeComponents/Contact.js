@@ -55,7 +55,11 @@ const Contact = () => {
 
 
                 <div className="contact__submitBtn">
-                    <button onClick={submitForm}>Send</button>
+                    <a href onClick={submitForm}>
+                        <button class="bn54">
+                            <span class="bn54span">Send</span>
+                        </button>
+                    </a>
                 </div>
 
             </div>
