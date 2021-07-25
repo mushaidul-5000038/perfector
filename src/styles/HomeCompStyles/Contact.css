@@ -24,6 +24,8 @@
   padding: 10px;
   margin-bottom: 40px;
   border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(14, 13, 13, 0.603);
+
 }
 .contact__input > input {
   margin-top: 5px;

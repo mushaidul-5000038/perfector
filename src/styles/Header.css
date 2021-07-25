@@ -18,11 +18,13 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 4px 4px 10px rgba(14, 13, 13, 0.603);
+
 }
 
 .header__contents {
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a {

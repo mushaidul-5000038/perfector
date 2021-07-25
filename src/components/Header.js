@@ -4,9 +4,9 @@ import "../styles/Header.css"
 const Header = () => {
     return (
         <div className='header'>
-            
+
             <div className='header__container'>
-                
+
                 <Link to='/'>
                     <h3 className='header__contents'>Home</h3>
                 </Link>
@@ -19,12 +19,9 @@ const Header = () => {
                     <h3 className='header__contents'>Sell</h3>
                 </Link>
 
-                <Link to='/agents'>
-                    <h3 className='header__contents'>Agents</h3>
-                </Link>     
-                      
+
             </div>
-            
+
         </div>
     )
 }

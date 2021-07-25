@@ -15,22 +15,22 @@ const PropertyDetails = () => {
                     <div className='propertyDetails__propertySection'>
                         <h1>House Details</h1>
                         <hr />
-                        <h3>{title}</h3>
-                        <h3>{propertyAddress}</h3>
-                        <p>{description}</p>
-                        <div>
-                            <h3>{room}</h3>
-                            <h3>{size}</h3>
-                            <h3>{price} tk</h3>
-                            <h3>For - {category}</h3>
+                        <h3>Title: {title}</h3>
+                        <h3>Address: {propertyAddress}</h3>
+                        <p>"{description}"</p>
+                        <div className='propertySpecifics'>
+                            <h3>Room no: {room}</h3>
+                            <h3>Size in sqft: {size}</h3>
+                            <h3>Price: {price} tk</h3>
+                            <h3>Category: {category}</h3>
                         </div>
                     </div>
                     <div className='propertyDetails__ownerSection'>
                         <h1>Owner's Info</h1>
                         <hr />
-                        <h3>{name}</h3>
-                        <h3>{Owneraddress}</h3>
-                        <h3>{phone}</h3>
+                        <h3>Name: {name}</h3>
+                        <p>Address: {Owneraddress}</p>
+                        <h3>Telephone: {phone}</h3>
                        
                     </div>
             </div>

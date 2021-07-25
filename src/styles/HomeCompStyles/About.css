@@ -26,6 +26,9 @@
   padding: 10px;
   color: aliceblue;
 }
+.about__text> p{
+  font-size: 1.2rem;
+}
 
 .carousel {
   border-radius: 10px;
@@ -35,4 +38,11 @@
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
     0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+@media screen and (max-width: 822px){
+  .about__container{
+    flex-direction: column;
+  }
+  
 }

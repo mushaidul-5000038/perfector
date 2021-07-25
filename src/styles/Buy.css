@@ -7,11 +7,15 @@
 
 .buy__container {
   display: flex;
+ 
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 20px;
   padding-top: 100px;
 }
 
-.buy__container > div {
+.buy__container > a {
   flex: 32%;
+  max-width: 800px;
 }

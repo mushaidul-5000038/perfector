@@ -30,7 +30,7 @@
 .cover__container > h1 {
   font-weight: 400;
   font-size: 2.9rem;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 hr {
@@ -42,4 +42,21 @@ hr {
   font-weight: 300;
   font-size: 1.7rem;
   color: rgb(198, 222, 226);
+}
+
+
+@media screen and (max-width: 822px){
+  .cover__container{
+    width: 40%;
+  }
+
+  .cover__container > h1 {
+      font-size: 1.8rem;
+    
+  }
+  .cover__container > p {
+    margin-left: 10px;
+    font-size: 1.4rem;
+  }
+  
 }

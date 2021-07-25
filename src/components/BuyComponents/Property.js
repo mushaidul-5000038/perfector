@@ -7,6 +7,22 @@ const Property = ({name,Owneraddress,phone,
                     imageUrl}) => {
 
     return (
+        <Link to={ { 
+            pathname: "/property/" + title,
+            state: {
+                name:name,
+                Owneraddress: Owneraddress,
+                phone:phone,
+                title:title,
+                propertyAddress:propertyAddress,
+                room:room,
+                size:size,
+                price:price,
+                category:category,
+                imageUrl:imageUrl,
+                description:description
+            },
+        }}>
         <div className='property'>
 
             
@@ -14,32 +30,19 @@ const Property = ({name,Owneraddress,phone,
             
             <img src={imageUrl} alt="" />
             <div className='property__details'>
+                <div className='partition'>
                 <h3>'{title}'</h3>
-                <h3>'{category}-{price} tk'</h3>
-                <Link to={ { 
-                        pathname: "/property/" + title,
-                        state: {
-                            name:name,
-                            Owneraddress: Owneraddress,
-                            phone:phone,
-                            title:title,
-                            propertyAddress:propertyAddress,
-                            room:room,
-                            size:size,
-                            price:price,
-                            category:category,
-                            imageUrl:imageUrl,
-                            description:description
-                        },
-                    }}>
-                        <button>See Details</button>
-                </Link>
+                <h3>{price} tk</h3>
+                </div>
+                
+                <h3>{category}</h3> 
             </div>
             
             
 
             
         </div>
+        </Link>
     )
 }
 
